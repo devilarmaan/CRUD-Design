@@ -1,0 +1,181 @@
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    color: rgba(248, 248, 248, .938);
+    background: url(/img/house-780438_1920.jpg) no-repeat center center fixed;
+}
+
+
+/*background image*/
+
+#fansy-form {}
+
+
+/*container utilite*/
+
+#fansy-form .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*main div*/
+
+.form-section {
+    margin-top: 5rem;
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* .form-left {
+    margin-top: 5rem;
+    display: table-row-group;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+} */
+
+.form-left h1 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*main div*/
+
+
+/*form left styling*/
+
+.form-left h4 {
+    padding: 0;
+    margin: 0;
+    color: rgb(243, 235, 235);
+}
+
+.line {
+    border-bottom: 2px solid rgb(12, 68, 207);
+    width: 8%;
+    margin-left: 0;
+}
+
+.form-left span {
+    color: rgb(187, 182, 182);
+    font-weight: bold;
+}
+
+.form-left hr {
+    width: 25em;
+    margin-left: 0;
+    border: 1px solid rgb(53, 53, 52);
+}
+
+.dark-bg {
+    background: black;
+    opacity: .8;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**social media icons styling*/
+
+.fa {
+    padding: 8px;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(187, 182, 182);
+}
+
+.fa:hover {
+    color: rgb(16, 135, 190);
+}
+
+
+/*form-right styling*/
+
+.form-right h1 {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+form {
+    padding-top: 2rem;
+}
+
+form h5 {
+    padding: 0;
+    margin: 0;
+    color: rgb(228, 218, 218);
+}
+
+form input {
+    padding: 0.6rem;
+    width: 27rem;
+    border: none;
+    background-color: rgba(136, 133, 133, 0.3);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+form textarea {
+    padding: 0.6rem;
+    width: 27rem;
+    border: none;
+    background-color: rgba(136, 133, 133, 0.3);
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+form button {
+    width: 9rem;
+    background: rgb(12, 168, 207);
+    padding: 5px;
+    outline: none;
+    border-color: transparent;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@media(max-width: 968px) {
+    #fancy-form .form-section {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+    #fancy-form {
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/woman-3377839_1920.jpg);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: 100%;
+    }
+    .form-section .form-right {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .fa {
+        padding: 8px;
+        font-size: 18px;
+        width: 30px;
+        text-align: center;
+        color: rgb(187, 182, 182);
+    }
+}
