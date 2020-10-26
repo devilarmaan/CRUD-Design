@@ -1,21 +1,14 @@
-body {
+body{
     padding: 0;
     margin: 0;
     line-height: 1.5;
     box-sizing: border-box;
     color: rgba(248, 248, 248, .938);
-    background: url(/img/house-780438_1920.jpg) no-repeat center center fixed;
+    background: url('../img/house-780438_1920.jpg') no-repeat center center fixed;
 }
 
-
-/*background image*/
-
-#fansy-form {}
-
-
 /*container utilite*/
-
-#fansy-form .container {
+#fansy-form .container{
     width: 80%;
     margin: auto;
     overflow: hidden;
@@ -23,8 +16,7 @@ body {
 
 
 /*main div*/
-
-.form-section {
+.form-section{
     margin-top: 5rem;
     display: grid;
     grid-gap: 5rem;
@@ -39,7 +31,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
 } */
 
-.form-left h1 {
+.form-left h1{
     color: #fff;
     padding: 0;
     margin: 0;
@@ -47,34 +39,32 @@ body {
 
 
 /*main div*/
-
-
 /*form left styling*/
 
-.form-left h4 {
+.form-left h4{
     padding: 0;
     margin: 0;
     color: rgb(243, 235, 235);
 }
 
-.line {
+.line{
     border-bottom: 2px solid rgb(12, 68, 207);
     width: 8%;
     margin-left: 0;
 }
 
-.form-left span {
+.form-left span{
     color: rgb(187, 182, 182);
     font-weight: bold;
 }
 
-.form-left hr {
+.form-left hr{
     width: 25em;
     margin-left: 0;
     border: 1px solid rgb(53, 53, 52);
 }
 
-.dark-bg {
+.dark-bg{
     background: black;
     opacity: .8;
     height: 100vh;
@@ -84,9 +74,8 @@ body {
 }
 
 
-/**social media icons styling*/
-
-.fa {
+/**** Social media icons styling ****/
+.fa{
     padding: 8px;
     font-size: 18px;
     width: 50px;
@@ -94,31 +83,29 @@ body {
     text-decoration: none;
     color: rgb(187, 182, 182);
 }
-
 .fa:hover {
     color: rgb(16, 135, 190);
 }
 
 
-/*form-right styling*/
-
+/* Form-right styling */
 .form-right h1 {
     color: #fff;
     padding: 0;
     margin: 0;
 }
 
-form {
+form{
     padding-top: 2rem;
 }
 
-form h5 {
+form h5{
     padding: 0;
     margin: 0;
     color: rgb(228, 218, 218);
 }
 
-form input {
+form input{
     padding: 0.6rem;
     width: 27rem;
     border: none;
@@ -128,7 +115,7 @@ form input {
     border: none;
 }
 
-form textarea {
+form textarea{
     padding: 0.6rem;
     width: 27rem;
     border: none;
@@ -138,7 +125,7 @@ form textarea {
     border: none;
 }
 
-form button {
+form button{
     width: 9rem;
     background: rgb(12, 168, 207);
     padding: 5px;
@@ -154,24 +141,25 @@ form button {
     cursor: pointer;
 }
 
-@media(max-width: 968px) {
+/** For only the media query **/
+@media(max-width: 968px){
     #fancy-form .form-section {
         display: block;
         width: 100%;
         text-align: left;
     }
-    #fancy-form {
+    #fancy-form{
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/woman-3377839_1920.jpg);
         background-size: cover;
         background-position: center;
         height: auto;
         width: 100%;
     }
-    .form-section .form-right {
+    .form-section .form-right{
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    .fa {
+    .fa{
         padding: 8px;
         font-size: 18px;
         width: 30px;
