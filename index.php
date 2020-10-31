@@ -1,7 +1,7 @@
 <?php
 ///PHP code here...
 //lets connecting the database..
-$connection = mysqli_connect('localhost', 'root', '', 'CRUD_Design', '8080', '');
+$connection = mysqli_connect('localhost', 'root', '', 'crud_design');
 
 //Check the Connection of Database...
 if (!$connection) {
@@ -47,11 +47,13 @@ if (isset($_POST['send'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!--adding fond awesome-->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>CRUD | Design</title>
+
+    <link rel="stylesheet" href="assets/fontawesome/css/all.main.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
+    <script async defer  src="assets/fontawesome/js/all.main.js"></script>
+    <script async defer src="assets/fontawesome/js/fontawesome.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <!-- Body Of this HTML page -->
@@ -78,8 +80,11 @@ if (isset($_POST['send'])){
                             $address = $row['addressname'];
                             $post = $row['post'];
                         ?>
-                            <div style="border: 1px solid grey;">
+                            <div style="border: 1px solid grey;" class="remove">
                                 <ul style="list-style-type: none;">
+                                <link rel="stylesheet" href="assets/fontawesome/css/all.main.css">
+                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+
                                     <li>
                                         <span>Author Name:- </span>
                                         <span><?php echo $authorname;?></span>

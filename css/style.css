@@ -4,8 +4,9 @@ body{
     line-height: 1.5;
     box-sizing: border-box;
     color: rgba(248, 248, 248, .938);
-    background: url('../img/house-780438_1920.jpg') no-repeat center center fixed;
+    background: url('../assets/img/house-780438_1920.jpg') no-repeat center center fixed;
 }
+
 
 /*container utilite*/
 #fansy-form .container{
@@ -39,8 +40,9 @@ body{
 
 
 /*main div*/
-/*form left styling*/
 
+
+/*form left styling*/
 .form-left h4{
     padding: 0;
     margin: 0;
@@ -83,13 +85,31 @@ body{
     text-decoration: none;
     color: rgb(187, 182, 182);
 }
-.fa:hover {
+
+div>i{
+    color: orchid;
+    background: rebeccapurple;
+    transition: 1s;
+}
+
+
+/**Icons hover effect***/
+div>i:hover{
+    display: none ;
+    transform: scale(1.3);
+    background: purple;
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}
+
+.fa:hover{
     color: rgb(16, 135, 190);
 }
 
 
 /* Form-right styling */
-.form-right h1 {
+
+.form-right h1{
     color: #fff;
     padding: 0;
     margin: 0;
@@ -141,25 +161,27 @@ form button{
     cursor: pointer;
 }
 
+
 /** For only the media query **/
-@media(max-width: 968px){
+
+@media(max-width: 968px) {
     #fancy-form .form-section {
         display: block;
         width: 100%;
         text-align: left;
     }
-    #fancy-form{
+    #fancy-form {
         background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/woman-3377839_1920.jpg);
         background-size: cover;
         background-position: center;
         height: auto;
         width: 100%;
     }
-    .form-section .form-right{
+    .form-section .form-right {
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
-    .fa{
+    .fa {
         padding: 8px;
         font-size: 18px;
         width: 30px;
