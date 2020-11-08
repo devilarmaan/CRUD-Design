@@ -1,29 +1,29 @@
-body{
-    padding: 0;
-    margin: 0;
-    line-height: 1.5;
-    box-sizing: border-box;
-    color: rgba(248, 248, 248, .938);
-    background: url('../assets/img/house-780438_1920.jpg') no-repeat center center fixed;
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+  color: rgba(248, 248, 248, 0.938);
+  background: url("../assets/img/house-780438_1920.jpg") no-repeat center center
+    fixed;
 }
-
 
 /*container utilite*/
-#fansy-form .container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+#fansy-form .container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
 }
-
-
+.container{
+  padding: 3px
+}
 /*main div*/
-.form-section{
-    margin-top: 5rem;
-    display: grid;
-    grid-gap: 5rem;
-    grid-template-columns: repeat(2, 1fr);
+.form-section {
+  margin-top: 5rem;
+  display: grid;
+  grid-gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
 }
-
 
 /* .form-left {
     margin-top: 5rem;
@@ -32,160 +32,210 @@ body{
     grid-template-columns: repeat(2, 1fr);
 } */
 
-.form-left h1{
-    color: #fff;
-    padding: 0;
-    margin: 0;
-}
 
+.form-left h1 {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
 
 /*main div*/
 
-
 /*form left styling*/
-.form-left h4{
-    padding: 0;
-    margin: 0;
-    color: rgb(243, 235, 235);
+.form-left h4 {
+  padding: 0;
+  margin: 0;
+  color: rgb(243, 235, 235);
 }
 
-.line{
-    border-bottom: 2px solid rgb(12, 68, 207);
-    width: 8%;
-    margin-left: 0;
-}
-
-.form-left span{
-    color: rgb(187, 182, 182);
-    font-weight: bold;
-}
-
-.form-left hr{
-    width: 25em;
-    margin-left: 0;
-    border: 1px solid rgb(53, 53, 52);
-}
-
-.dark-bg{
-    background: black;
-    opacity: .8;
-    height: 100vh;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-
-/**** Social media icons styling ****/
-.fa{
-    padding: 8px;
-    font-size: 18px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(187, 182, 182);
-}
-
-div>i{
-    color: orchid;
-    background: rebeccapurple;
-    transition: 1s;
-}
-
-
-/**Icons hover effect***/
-div>i:hover{
-    display: none ;
-    transform: scale(1.3);
-    background: purple;
-    box-shadow: 2px 2px 2px #000;
-    z-index: 2;
-}
-
-.fa:hover{
-    color: rgb(16, 135, 190);
-}
-
-
-/* Form-right styling */
-
-.form-right h1{
-    color: #fff;
-    padding: 0;
-    margin: 0;
+.line {
+  border-bottom: 2px solid rgb(12, 68, 207);
+  width: 8%;
+  margin-left: 0;
 }
 
 form{
-    padding-top: 2rem;
+  padding-top: 2rem;
+}
+.form-left span {
+  color: rgb(187, 182, 182);
+  font-weight: bold;
+}
+
+.form-left hr {
+  width: 25em;
+  margin-left: 0;
+  border: 1px solid rgb(53, 53, 52);
+}
+
+.dark-bg{
+  background: black;
+  opacity: 0.8;
+  height: 100%;
+  width: 10;
+  padding: 0;
+  margin: 0;
+}
+
+/**** Social media icons styling ****/
+.fa{
+  padding: 8px;
+  font-size: 18px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(187, 182, 182);
+}
+
+.fa:hover{
+  color: rgb(16, 135, 190);
+}
+
+/* div>i{
+    color: orchid;
+    background: rebeccapurple;
+    transition: 1s;
+} */
+/* div>ul>i{
+     transition: all 1s; 
+    visibility: hidden;
+    border-radius: 50%;
+  }
+
+/**Icons hover effect***/
+/* div>ul a>i:hover{
+    visibility: visible;
+    transform: scale(1.6);
+    color: rgb(243, 235, 235);
+    box-shadow: 2px 2px 2px #000;
+    z-index: 2;
+}    */
+
+.remove ul li a i.fa{
+  color: #666;
+  visibility: hidden;
+  /* transition: all 1s ease-in-out; */
+}
+.remove:hover ul li a i.fa{
+  position: bottom;
+  visibility: visible;
+  transition: all 1s;
+  transform: scale(1.2);
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+  flex-basis: initial;
+  bottom: 20%;
+  right: 20%;
+  transform: translate(-20%, -20%);
+}
+.remove ul li a i.fa{
+  color: #666;
+  visibility: hidden;
+}
+.remove:hover ul  li a i.fa{
+  position: relative;
+  visibility: visible;
+  transition: all 1s;
+  transform: scale(1.2);
+  box-shadow: 2px 2px 2px #000;
+  z-index: 2;
+  bottom: 20%;
+  right: 20%;
+  transform: translate(-20%, -20%);
+}
+/* .up{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+} */
+/* div li a i.fa{
+  text-align: right;
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 1rem;
+
+} */
+
+/* Form-right styling */
+/* .form-right h1{
+  color: #fff;
+  padding: 0;
+  margin: 0;
+} */
+
+form{
+  padding-top: 2rem;
 }
 
 form h5{
-    padding: 0;
-    margin: 0;
-    color: rgb(228, 218, 218);
+  padding: 0;
+  margin: 0;
+  color: rgb(228, 218, 218);
 }
 
 form input{
-    padding: 0.6rem;
-    width: 27rem;
-    border: none;
-    background-color: rgba(136, 133, 133, 0.3);
-    color: #fff;
-    outline: none;
-    border: none;
+  padding: 0.6rem;
+  width: 27rem;
+  border: none;
+  background-color: rgba(136, 133, 133, 0.3);
+  color: #fff;
+  outline: none;
+  border: none;
 }
 
 form textarea{
-    padding: 0.6rem;
-    width: 27rem;
-    border: none;
-    background-color: rgba(136, 133, 133, 0.3);
-    color: #fff;
-    outline: none;
-    border: none;
+  padding: 0.6rem;
+  width: 27rem;
+  border: none;
+  background-color: rgba(136, 133, 133, 0.3);
+  color: #fff;
+  outline: none;
+  border: none;
 }
 
 form button{
-    width: 9rem;
-    background: rgb(12, 168, 207);
-    padding: 5px;
-    outline: none;
-    border-color: transparent;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
-    margin-top: 0.9rem;
-    border-radius: 50px;
-    cursor: pointer;
+  width: 9rem;
+  background: rgb(12, 168, 207);
+  padding: 5px;
+  outline: none;
+  border-color: transparent;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 0.9rem;
+  border-radius: 50px;
+  cursor: pointer;
 }
-
 
 /** For only the media query **/
 
-@media(max-width: 968px) {
-    #fancy-form .form-section {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-    #fancy-form {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/woman-3377839_1920.jpg);
-        background-size: cover;
-        background-position: center;
-        height: auto;
-        width: 100%;
-    }
-    .form-section .form-right {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    .fa {
-        padding: 8px;
-        font-size: 18px;
-        width: 30px;
-        text-align: center;
-        color: rgb(187, 182, 182);
-    }
+@media (max-width: 968px){
+  #fancy-form .form-section{
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  #fancy-form{
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(/img/woman-3377839_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+  }
+  .form-section .form-right{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .fa{
+    padding: 8px;
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+    color: rgb(187, 182, 182);
+  }
 }

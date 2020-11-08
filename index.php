@@ -5,40 +5,40 @@ $connection = mysqli_connect('localhost', 'root', '', 'crud_design');
 
 //Check the Connection of Database...
 if (!$connection) {
-    die("<h3 style='color: red'>Connection ERROR!</h3>".mysqli_errno($connection));
+    die("<h3 style='color: red'>Connection ERROR!</h3>" . mysqli_errno($connection));
 }
 
 //Data Post to Database with Procedurial Way...
-if (isset($_POST['send'])){
+if (isset($_POST['send'])) {
     $authorname = $_POST['authorname'];
     $title = $_POST['title'];
     $address = $_POST['addressname'];
     $post = $_POST['post'];
 
-    if($authorname !== '' && $title !== '' && $address !== '' && $post !== ''){
+    if ($authorname !== '' && $title !== '' && $address !== '' && $post !== '') {
         $query = "INSERT INTO `crud_posts_data`(`authorname`, `title`, `addressname`, `post`) ";
         $query .= "VALUES ('$authorname', '$title', '$address', '$post')";
 
         $result = mysqli_query($connection, $query);
 
         //checking the query in ok or no...
-        if(!$result){
-            die("<h3 style='color: red'>Query ERROR!</h3>".mysqli_errno($result));
+        if (!$result) {
+            die("<h3 style='color: red'>Query ERROR!</h3>" . mysqli_errno($result));
         }
-    }else{
+    } else {
         echo "<h3 style='color: red; text-align: center; margin-top: 1rem'>Please Insert Value!</h3>";
     }
 }
 
 ///For Showing Data into frontEnd...
-    ///Inserting all of data...
-    $data_query_all = "SELECT * FROM `crud_posts_data`";
-    $query_all_result = mysqli_query($connection, $data_query_all);
+///Inserting all of data...
+$data_query_all = "SELECT * FROM `crud_posts_data`";
+$query_all_result = mysqli_query($connection, $data_query_all);
 
-    ///The Condition to checking Query
-    if(!$query_all_result){
-        die("<h3 style='color: red'>Query ERROR! When Goes to showing all data</h3>" . mysqli_errno($query_all_result));
-    }
+///The Condition to checking Query
+if (!$query_all_result) {
+    die("<h3 style='color: red'>Query ERROR! When Goes to showing all data</h3>" . mysqli_errno($query_all_result));
+}
 ?>
 
 <!DOCTYPE html>
@@ -48,12 +48,18 @@ if (isset($_POST['send'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRUD | Design</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 
     <link rel="stylesheet" href="assets/fontawesome/css/all.main.css">
     <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.min.css">
-    <script async defer  src="assets/fontawesome/js/all.main.js"></script>
+    <script async defer src="assets/fontawesome/js/all.main.js"></script>
     <script async defer src="assets/fontawesome/js/fontawesome.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <!-- Body Of this HTML page -->
@@ -81,27 +87,44 @@ if (isset($_POST['send'])){
                             $post = $row['post'];
                         ?>
                             <div style="border: 1px solid grey;" class="remove">
+
+
+                                <ul style="list-style-type: none; text-align: right;">
+                                    <li class="up">
+                                        <a href="#"><i class="fa fa-trash-o" style="color: white;"></i></a>
+                                        <a href="#"><i class="fa fa-wrench" style="color: white;"></i></a>
+                                    </li>
+
+                                </ul>
+
+
                                 <ul style="list-style-type: none;">
-                                <link rel="stylesheet" href="assets/fontawesome/css/all.main.css">
-                                <i class="fa fa-trash-o" aria-hidden="true"></i>
+
+                                    <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.main.css"> -->
+
+
+
+                                    <!-- <li style="text-align: right;"><a href="#"><i class="fas fa-marker" style="color: white;"></i></a> -->
 
                                     <li>
                                         <span>Author Name:- </span>
-                                        <span><?php echo $authorname;?></span>
+                                        <span><?php echo $authorname; ?></span>
                                     </li>
                                     <li>
                                         <span>Title of Post:- </span>
-                                        <span><?php echo $title;?></span>
+                                        <span><?php echo $title; ?></span>
                                     </li>
                                     <li>
                                         <span>Address Of City:- </span>
-                                        <span><?php echo $address;?></span>
-                                    </li>
+                                        <span><?php echo $address; ?></span>
                                     <li>
                                         <span>Post:- </span>
-                                        <span><?php echo $post;?></span>
+                                        <span><?php echo $post; ?></span>
                                     </li>
+                                    </li>
+                                    <!-- </li> -->
                                 </ul>
+
                             </div>
                             <br>
                         <?php
@@ -110,11 +133,12 @@ if (isset($_POST['send'])){
                         <br>
 
                         <!-------social media icons------>
+                        <!-- <link rel="stylesheet" href="assets/fontawesome/css/all.main.css"> -->
                         <a href="#" class="fa fa-facebook"></a>
                         <a href="#" class="fa fa-twitter"></a>
                         <a href="#" class="fa fa-google"></a>
                         <a href="#" class="fa fa-youtube"></a>
-                        <a href="#" class="linkedin"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
                     </div>
 
 
