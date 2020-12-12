@@ -6,6 +6,15 @@ if (isset($_POST['send'])) {
     $address = $_POST['addressname'];
     $post = $_POST['post'];
 
+    ///Real Strings..
+    $authorname = mysqli_real_escape_string($connection, $authorname);
+    $title = mysqli_real_escape_string($connection, $title);
+    $address = mysqli_real_escape_string($connection, $address);
+    $post = mysqli_real_escape_string($connection, $address);
+
+    //On-page buffer..
+    header("Location: index.php");
+
     if ($authorname !== '' && $title !== '' && $address !== '' && $post !== '') {
         $query = "INSERT INTO `crud_posts_data`(`authorname`, `title`, `addressname`, `post`) ";
         $query .= "VALUES ('$authorname', '$title', '$address', '$post')";

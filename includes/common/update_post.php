@@ -1,34 +1,34 @@
- <!----------****----- Create Posts PHP -----****---------->
- <?php include "includes/crud_ops/create.php"; ?>
- 
+<!-- Update PHP -->
+<?php include "includes/crud_ops/update.php"; ?>
+
  <!----------*****------ form-right -----*****----------->
  <div class="form-right">
-                        <h1>Create Post</h1>
+                        <h1>Update Post</h1>
                         <div class="line"></div>
 
                         <!--form-->
-                        <form action="index.php" method="post">
+                        <form method="post">
 
                             <!-- Author Input -->
                             <h5>Author</h5>
-                            <input type="text" name="authorname" placeholder="Your Name...">
+                            <input type="text" name="authorname" value="<?php echo $authorname ;?>">
                             <br><br>
 
                             <!-- Title Input -->
                             <h5>Title</h5>
-                            <input type="text" name="title" placeholder="Title..">
+                            <input type="text" name="title" value="<?php echo $title ;?>">
                             <br><br>
 
                             <!-- Address Input -->
                             <h5>Address</h5>
-                            <input type="text" name="addressname" placeholder="City...">
+                            <input type="text" name="addressname" value="<?php echo $addressname; ?>">
                             <br><br>
 
                             <!-- Post TextArea -->
                             <h5>Your Post</h5>
-                            <textarea name="post" placeholder="Post..." id="" cols="30" rows="10"></textarea>
+                            <textarea name="post" id="" cols="30" rows="10"><?php echo $post; ?></textarea>
 
                             <!-- Input Form Submit For -->
-                            <button type="submit" name="send">Send</button>
+                            <button type="submit" name="make-update">Update!</button>
                         </form>
                     </div>

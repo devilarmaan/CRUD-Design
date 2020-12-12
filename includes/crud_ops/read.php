@@ -1,7 +1,7 @@
 <?php
 ///For Showing Data into frontEnd...
 ///Inserting all of data...
-$data_query_all = "SELECT * FROM `crud_posts_data`";
+$data_query_all = "SELECT * FROM `crud_posts_data` ORDER BY `id` DESC";
 $query_all_result = mysqli_query($connection, $data_query_all);
 
 ///The Condition to checking Query

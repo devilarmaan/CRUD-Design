@@ -1,6 +1,9 @@
 <!-- Read PHP -->
 <?php include "includes/crud_ops/read.php"; ?>
 
+<!-- Delete Post PHP -->
+<?php include "includes/crud_ops/delete.php"; ?>
+
 <!---------********---- form-left ------********----------->
  <div class="form-left">
                         <h1>Get in Touch</h1>
@@ -21,8 +24,9 @@
 
                                 <ul style="list-style-type: none; text-align: right;">
                                     <li class="up">
-                                        <a href="#"><i class="fa fa-trash-o" style="color: white;"></i></a>
-                                        <a href="#"><i class="fa fa-wrench" style="color: white;"></i></a>
+                                        <a href="index.php?deleteId=<?php echo $id; ?>"><i class="fa fa-trash-o" style="color: white;"></i></a>
+
+                                        <a href="index.php?post_update&updateId=<?php echo $id; ?>"><i class="fa fa-wrench" style="color: white;"></i></a>
                                     </li>
 
                                 </ul>
